@@ -1,0 +1,33 @@
+h1 {
+    color:blue;
+    font-size: 28px;
+}
+
+.title-heading {
+    font-size: 28px;
+    text-decoration:underline;
+    background-color:pink;
+    padding: 20 px 50 px 10 px 25 px;
+    border-top: 10px dashed red;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*.sub-heading {
+    color: green;
+    font-size: 24px;
+}
+
+.super-special-heading{
+    color: purple;
+    font-style: italic;
+} */
+
+p {
+    color: red;
+    font-style: italic;
+}
+
+h1 {
+    color: green;
+}
