@@ -3,6 +3,10 @@
   font-size: 18px;
 } */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
@@ -11,6 +15,7 @@ body {
 
 h1 {
   color: darkred;
+  text-align: center;
 }
 
 h2 {
@@ -22,15 +27,77 @@ h2 {
 }
 
 /* rem is useful to scale up for readability */
-.about-text {
+/* .about-text {
   font-size: 1rem;
-}
-*/ .menu-item {
-  width: 300px;
+} */
+
+.menu-item {
+  position: relative;
+  top: 10px;
+  width: 250px;
   background-color: white;
   padding: 20px;
   box-shadow: 1px 1px 5px #ccc;
   border: 1px solid black;
   border-radius: 10px;
   margin: 20px 0;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+/* layouts - flexbox, grid, float, positioning */
+
+/* layouts - css grid example */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal 1fr width */
+  /* two columns 
+  => grip-template-columns: repeat(1fr 8fr) and have an image on the right*/
+  gap: 20px;
+}
+
+/* layouts - flexbox example */
+/* .menu-list {
+  display: flex;
+  flex-wrap: wrap; */
+/* flex-direction: column;
+  flex-direction: column-reverse;
+  gap: 20px; */
+/* distribute along main axis (row direction = horizontal) */
+/* justify-content: center; 
+  /* distribute along secondary axis (row direction = vertical) */
+/* align-items: center; }  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #d7a8a8;
+  color: white;
+}
+
+.navbar h2 {
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* layout -float example */
+.restaurant-image {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
